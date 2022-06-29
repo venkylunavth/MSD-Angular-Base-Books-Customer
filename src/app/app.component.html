@@ -1,0 +1,40 @@
+<p *ngFor="let temp of books">
+  {{temp.name}} -- {{temp.author}}
+</p>
+<hr/>
+<div style="background-color: bisque; padding:25px">
+      <h4 style="text-align:center" >Add New books</h4>
+      <div class="form-outline "  style="text-align:center"  ><br/>
+               <label >Enter student id:</label><br/>
+              <input type="number" [(ngModel)]="addId" /><br/>
+  
+      </div>
+
+     <div  style="text-align:center" >
+            <label  >Enter Student Name:</label><br/>
+             <input type="text"  [(ngModel)]="addName" /><br/>
+  
+      </div>
+
+     <div style="text-align:center" >
+            <label >Enter Author Name:</label><br/>
+            <input type="text"  [(ngModel)]="addAuthor"/><br/>
+ 
+      </div>
+<br/><br/>
+       <div style="text-align:center" ><br/>
+       <button style="text-align:center" type="button" (click)="addBook()">Add New Student</button>
+       </div>
+</div>
+<br/>>
+<div style="background-color: bisque; padding: 25px; text-align:center">
+      <h4 style=" text-align:center">Delete Book</h4>
+                <label style=" text-align:center">Delete Student Id: </label>
+               <input type="number" [(ngModel)]="deleteId"/>
+<br><br>
+<button type="button" (click)="deleteBook()" style=" text-align:center">Delete Book</button>
+
+</div>
+
+
+
